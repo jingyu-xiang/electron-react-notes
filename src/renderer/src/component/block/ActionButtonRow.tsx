@@ -8,7 +8,7 @@ export function ActionButtonRow({
   ...rest
 }: ComponentProps<"div">): JSX.Element {
   return (
-    <div {...rest}>
+    <div className={cn("flex justify-between")} {...rest}>
       <Ui.ActionButton>
         <LuFileSignature className={cn("w-4 h-4 text-zinc-300")} />
       </Ui.ActionButton>

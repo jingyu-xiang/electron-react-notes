@@ -7,7 +7,10 @@ export function Sidebar({
 }: ComponentProps<"aside">): JSX.Element {
   return (
     <aside
-      className={cn("w-[250px]  h-[100vh + 10px] overflow-auto ", className)}
+      className={cn(
+        "pt-8 bg-zinc-800/95 w-[250px]  h-[100vh + 10px] overflow-auto px-2.5",
+        className,
+      )}
       {...rest}
     >
       {children}

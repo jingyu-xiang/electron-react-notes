@@ -12,7 +12,7 @@ if (!process.contextIsolated) throw new Error("contextIsolated is must be true")
 if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld("context", {
-      // TODO
+      locale: navigator.language, // locale
     })
   } catch (error) {
     console.error(error)
