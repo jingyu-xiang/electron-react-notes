@@ -13,7 +13,7 @@ function NotePreview({
   lastEdited,
   isActive = false,
   className,
-  ...props
+  ...rest
 }: NotePreviewProps): JSX.Element {
   return (
     <div
@@ -22,7 +22,7 @@ function NotePreview({
         { "bg-zinc-400/75": isActive, "hover:bg-zinc-500/75": !isActive },
         className,
       )}
-      {...props}
+      {...rest}
     >
       <h3 className="mb-1 font-bold truncate">{title}</h3>
       <span className="inline-block w-full text-xs font-light text-left">

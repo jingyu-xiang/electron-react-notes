@@ -5,10 +5,11 @@ import { FaRegTrashAlt } from "react-icons/fa"
 import { ComponentProps } from "react"
 
 export function ActionButtonRow({
+  className,
   ...rest
 }: ComponentProps<"div">): JSX.Element {
   return (
-    <div className={cn("flex justify-between")} {...rest}>
+    <div className={cn("flex justify-between", className)} {...rest}>
       <Ui.ActionButton>
         <LuFileSignature className={cn("w-4 h-4 text-zinc-300")} />
       </Ui.ActionButton>
